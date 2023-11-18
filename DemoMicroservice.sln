@@ -19,35 +19,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechniquesAPI", "Techniques
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingMaterailsService", "BuildingMaterailsService", "{A2666DE3-A09B-40B4-AC1D-91794034FECE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingMaterilalsAPI", "BuildingMaterilalsAPI\BuildingMaterilalsAPI.csproj", "{266D8BC1-A059-49BE-9CC5-F7D7B51EF36D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingMaterilals.Web", "BuildingMaterilalsAPI\BuildingMaterilals.Web.csproj", "{266D8BC1-A059-49BE-9CC5-F7D7B51EF36D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", "{E43E22AA-21B4-4151-B8D3-63D076B81740}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GatewayAPI", "GatewayAPI\GatewayAPI.csproj", "{753B212D-DABA-47A0-AE8A-859365832543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingMaterials.Domain", "BuildingMaterials.Domain\BuildingMaterials.Domain.csproj", "{53AA9701-D78D-4490-BDAC-CE64BEAE1691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingMaterials.Domain", "BuildingMaterials.Domain\BuildingMaterials.Domain.csproj", "{53AA9701-D78D-4490-BDAC-CE64BEAE1691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingMaterials.Application", "BuidingMaterials.DataAccess\BuildingMaterials.Application.csproj", "{335B7601-8BFF-4B3E-9451-205D04D73DB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingMaterials.Application", "BuidingMaterials.DataAccess\BuildingMaterials.Application.csproj", "{335B7601-8BFF-4B3E-9451-205D04D73DB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingMaterials.Infrastructure", "BuidingMaterials.Infrastructure\BuildingMaterials.Infrastructure.csproj", "{CBA0CD87-6706-4A5C-9917-0E198556E868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingMaterials.Infrastructure", "BuidingMaterials.Infrastructure\BuildingMaterials.Infrastructure.csproj", "{CBA0CD87-6706-4A5C-9917-0E198556E868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacy.Domain", "Farmacy.Domain\Farmacy.Domain.csproj", "{D5DAB7B9-D3F0-4B7E-88BF-7CCE083839F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farmacy.Domain", "Farmacy.Domain\Farmacy.Domain.csproj", "{D5DAB7B9-D3F0-4B7E-88BF-7CCE083839F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacy.DataAccess", "Farmacy.DataAccess\Farmacy.DataAccess.csproj", "{0FDFB5B1-1B3B-4420-8FC5-0D016D9DED84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farmacy.DataAccess", "Farmacy.DataAccess\Farmacy.DataAccess.csproj", "{0FDFB5B1-1B3B-4420-8FC5-0D016D9DED84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacy.Infrastructure", "Farmacy.Infrastructure\Farmacy.Infrastructure.csproj", "{684A3924-B96B-4B0D-9DB4-F7B3FC513623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farmacy.Infrastructure", "Farmacy.Infrastructure\Farmacy.Infrastructure.csproj", "{684A3924-B96B-4B0D-9DB4-F7B3FC513623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.DataAccess", "Food.DataAccess\Food.DataAccess.csproj", "{097C26F5-8AB0-489C-B2E8-589BF76CD711}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.DataAccess", "Food.DataAccess\Food.DataAccess.csproj", "{097C26F5-8AB0-489C-B2E8-589BF76CD711}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Domain", "Food.Domain\Food.Domain.csproj", "{25466C4A-5406-4252-9551-F764AED6ACC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.Domain", "Food.Domain\Food.Domain.csproj", "{25466C4A-5406-4252-9551-F764AED6ACC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Infrastructure", "Food.Infrastructure\Food.Infrastructure.csproj", "{A0BE689C-6151-446E-83AE-1C2EEAAED1D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.Infrastructure", "Food.Infrastructure\Food.Infrastructure.csproj", "{A0BE689C-6151-446E-83AE-1C2EEAAED1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techniques.Domain", "Techniques.Domain\Techniques.Domain.csproj", "{4461F3B3-B428-4EC0-AC96-2081EBD51A39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techniques.Domain", "Techniques.Domain\Techniques.Domain.csproj", "{4461F3B3-B428-4EC0-AC96-2081EBD51A39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techniques.DataAccess", "Techniques.DataAccess\Techniques.DataAccess.csproj", "{CF3848F0-B92D-4A38-A1D9-002396FD1EA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techniques.DataAccess", "Techniques.DataAccess\Techniques.DataAccess.csproj", "{CF3848F0-B92D-4A38-A1D9-002396FD1EA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techniques.Infrastructure", "Techniques.Infrastructure\Techniques.Infrastructure.csproj", "{6020227E-BB2E-4F77-A104-401E1A9F707A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techniques.Infrastructure", "Techniques.Infrastructure\Techniques.Infrastructure.csproj", "{6020227E-BB2E-4F77-A104-401E1A9F707A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
