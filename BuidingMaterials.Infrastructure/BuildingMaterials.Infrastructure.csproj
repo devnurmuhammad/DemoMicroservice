@@ -22,5 +22,9 @@
 	  <Folder Include="Mig\" />
 	  <Folder Include="Repositories\" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BuildingMaterials.Domain\BuildingMaterials.Domain.csproj" />
+	</ItemGroup>
 	
 </Project>
