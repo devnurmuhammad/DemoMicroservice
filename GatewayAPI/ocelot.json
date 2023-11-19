@@ -12,6 +12,19 @@
       "UpstreamPathTemplate": "/build",
       "UpstreamHttpMethod": [ "Get" ]
     }
+    //{
+    //  "DownstreamPathTemplate": "/api/Building/Get",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "https": null, //localhost:7093/api/Building/Get
+    //      "Port": 7093
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/build",
+    //  "UpstreamHttpMethod": [ "Get" ]
+    //}
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:5000"
