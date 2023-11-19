@@ -1,7 +1,7 @@
 ﻿using BuildingMaterials.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BuildingMaterials
+namespace BuildingMaterials.DataAccess.DataAccess
 {
     public class ApplicationDbContext : DbContext
     {
