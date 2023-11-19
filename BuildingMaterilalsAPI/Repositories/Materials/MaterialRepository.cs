@@ -31,23 +31,6 @@ namespace BuildingMaterilals.Web.Repositories.Materials
                 return false;
         }
 
-        //public async ValueTask<bool> CreateAsync(Material model)
-        //{
-        //    Material material = new Material();
-        //    material.Name = model.Name;
-        //    material.Description = model.Description;
-        //    material.Cost = model.Cost;
-
-        //    var result = await dbContext.AddAsync(material);
-        //    await dbContext.SaveChangesAsync();
-
-        //    if (result != null)
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
         public ValueTask<bool> DeleteAsync(string name)
         {
             throw new NotImplementedException();
