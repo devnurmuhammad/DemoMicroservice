@@ -9,5 +9,9 @@
   <ItemGroup>
     <Folder Include="Services\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingMaterials.Domain\BuildingMaterials.Domain.csproj" />
+  </ItemGroup>
 	
 </Project>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BuildingMaterilals.Web.Repositories.Materials;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BuildingMaterilalsAPI.Controllers
 {
@@ -6,10 +7,17 @@ namespace BuildingMaterilalsAPI.Controllers
     [ApiController]
     public class BuildingController : ControllerBase
     {
+        private readonly IMaterialRepository materialRepository;
+
+        public BuildingController(IMaterialRepository _materialRepository)
+        {
+            this.materialRepository = _materialRepository;
+        }
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Builing Controller");
+            var result = materialRepository.GetAllAsync();
+            return Ok(result);
         }
     }
 }

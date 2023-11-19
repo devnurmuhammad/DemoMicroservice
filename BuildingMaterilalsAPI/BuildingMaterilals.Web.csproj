@@ -4,18 +4,32 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>2daac7d0-c8f3-4918-b5b9-5ae20b2fde8b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Services\**" />
+    <Content Remove="Entities\**" />
+    <Content Remove="Services\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\BuidingMaterials.Infrastructure\BuildingMaterials.Infrastructure.csproj" />
+
   </ItemGroup>
 
 </Project>
