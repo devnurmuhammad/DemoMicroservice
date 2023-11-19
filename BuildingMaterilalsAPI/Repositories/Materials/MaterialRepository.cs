@@ -1,5 +1,7 @@
-﻿using BuildingMaterials.DataAccess.DataAccess;
+﻿using BuildingMaterials;
+using BuildingMaterials.DataAccess.DataAccess;
 using BuildingMaterials.Domain.Entities;
+using BuildingMaterilals.Web.DTOs;
 using Microsoft.EntityFrameworkCore;
 
 namespace BuildingMaterilals.Web.Repositories.Materials
@@ -11,21 +13,22 @@ namespace BuildingMaterilals.Web.Repositories.Materials
         {
             dbContext = _dbContext;
         }
-        public async ValueTask<bool> CreateAsync(Material model)
+
+        public async ValueTask<bool> CreateAsync(MaterialDTO materialDTO)
         {
-            Material material = new Material();
-            material.Name = model.Name;
-            material.Description = model.Description;
-            material.Cost = model.Cost;
+                Material material = new Material();
+                material.Name = materialDTO.Name;
+                material.Description = materialDTO.Description;
+                material.Cost = materialDTO.Cost;
 
-            var result = await dbContext.AddAsync(material);
-            await dbContext.SaveChangesAsync();
+                var result = await dbContext.AddAsync(material);
+                await dbContext.SaveChangesAsync();
 
-            if (result != null)
-            {
-                return true;
-            }
-            return false;
+                if (result != null)
+                {
+                    return true;
+                }
+                return false;
         }
 
         public ValueTask<bool> DeleteAsync(string name)

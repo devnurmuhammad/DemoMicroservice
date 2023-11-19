@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Building/Get",
+      "DownstreamPathTemplate": "/api/Building/GetAllMaterial",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,22 +9,22 @@
           "Port": 7093
         }
       ],
-      "UpstreamPathTemplate": "/build",
+      "UpstreamPathTemplate": "/GetAllMaterial",
       "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Building/CreateMaterial",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7093
+        }
+      ],
+      "UpstreamPathTemplate": "/CreateMaterial",
+      "UpstreamHttpMethod": [ "Post" ]
     }
-    //{
-    //  "DownstreamPathTemplate": "/api/Building/Get",
-    //  "DownstreamScheme": "https",
-    //  "DownstreamHostAndPorts": [
-    //    {
-    //      "Host": "localhost",
-    //      "https": null, //localhost:7093/api/Building/Get
-    //      "Port": 7093
-    //    }
-    //  ],
-    //  "UpstreamPathTemplate": "/build",
-    //  "UpstreamHttpMethod": [ "Get" ]
-    //}
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:5000"
