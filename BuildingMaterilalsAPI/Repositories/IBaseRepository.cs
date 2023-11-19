@@ -1,8 +1,10 @@
-﻿namespace BuildingMaterials.Domain.Interfaces;
+﻿using BuildingMaterilals.Web.DTOs;
+
+namespace BuildingMaterials.Domain.Interfaces;
 
 public interface IBaseRepository<TModel> where TModel : class
 {
-    public ValueTask<bool> CreateAsync(TModel model);
+    public ValueTask<bool> CreateAsync(MaterialDTO materialDTO);
     public ValueTask<bool> UpdateAsync(string name, TModel model);
     public ValueTask<bool> DeleteAsync(string name);
     public ValueTask<IList<TModel>> GetAllAsync();
