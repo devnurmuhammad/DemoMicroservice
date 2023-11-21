@@ -30,6 +30,8 @@ namespace BuildingMaterilals.Web.Repositories.Materials
             return false;
         }
 
+
+
         public async ValueTask<bool> DeleteAsync(string name)
         {
             var result = await dbContext.Materials.FirstOrDefaultAsync(x => x.Name == name);
