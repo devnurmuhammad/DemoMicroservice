@@ -22,6 +22,13 @@ namespace BuildingMaterilalsAPI.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        public async ValueTask<IActionResult> GetMaterialByName(string name)
+        {
+            var result = await materialRepository.GetByNameAsync(name);
+            return Ok(result);
+        }
+
         [HttpPost]
         public async ValueTask<IActionResult> CreateMaterialAsync(MaterialDTO materialDTO)
         {
@@ -29,5 +36,25 @@ namespace BuildingMaterilalsAPI.Controllers
             return Ok(result);
         }
 
+        [HttpPatch]
+        public async ValueTask<IActionResult> UpdateMaterialAsync(string name, MaterialDTO materialDTO)
+        {
+            var result = await materialRepository.UpdateAsync(name, materialDTO);
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        public async ValueTask<IActionResult> DeleteMaterialAsync(string name)
+        {
+            var result = await materialRepository.DeleteAsync(name);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async ValueTask<IActionResult> GetCountAsync()
+        {
+            int result = await materialRepository.GetCountAsync();
+            return Ok(result);
+        }
     }
 }
